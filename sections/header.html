@@ -39,8 +39,16 @@
                         <li><a href="#" class="block">주주사 소개</a></li>
                         <li><a href="#" class="block">오시는 길</a></li>
                         <li><a href="#" class="block">제휴문의</a></li>
-                        <li><a href="#" class="block" target="_blank">금융기술연구소</a></li>
-                        <li><a href="#" class="block" target="_blank">카카오뱅크 인증서</a></li>
+                        <li>
+                          <a href="#" class="block" target="_blank"
+                            >금융기술연구소</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="block" target="_blank"
+                            >카카오뱅크 인증서</a
+                          >
+                        </li>
                       </ul>
                     </li>
                     <li>
@@ -57,7 +65,9 @@
                         <li><a href="#" class="block">입찰공고</a></li>
                       </ul>
                     </li>
-                    <li><a href="#" class="block" target="_blank">인재영입</a></li>
+                    <li>
+                      <a href="#" class="block" target="_blank">인재영입</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -111,7 +121,11 @@
                       <a href="#" class="block">IR일정</a>
                       <ul>
                         <li><a href="#" class="block">IR행사</a></li>
-                        <li><a href="#" class="block" target="_blank">IR미팅예약</a></li>
+                        <li>
+                          <a href="#" class="block" target="_blank"
+                            >IR미팅예약</a
+                          >
+                        </li>
                         <li><a href="#" class="block">주주총회</a></li>
                       </ul>
                     </li>
@@ -344,6 +358,13 @@
             </ul>
           </div>
         </div>
+
+        <!-- 글로벌 파트 -->
+        <div class="flex-as-c">
+          <a href="#" class="global_logo">
+            <img src="../imgs/icon_eng.svg" alt="" />
+          </a>
+        </div>
       </div>
     </header>
 
@@ -526,7 +547,12 @@
         vertical-align: middle;
       }
 
-      header .menu_box .menu_box-sec_menu > ul > li > a[target="_blank"]::after {
+      header
+        .menu_box
+        .menu_box-sec_menu
+        > ul
+        > li
+        > a[target="_blank"]::after {
         width: 18px;
         height: 18px;
         background-size: 18px 18px;
@@ -574,7 +600,7 @@
         background: url(../imgs/svg_line_arrow_down.svg);
         background-size: 12px 12px;
         display: inline-block;
-        transition: all .3s;
+        transition: all 0.3s;
       }
 
       header .dropdown .dropBtn.rotate::after {
@@ -626,6 +652,22 @@
         margin-top: -3px;
         vertical-align: middle;
       }
+
+      /* 글로벌 로고 */
+      header > .global_logo {
+        display: inline-block;
+        width: 20px;
+      }
+
+      header .global_logo > img {
+        width: 100%;
+        display: block;
+      }
+
+      header .global_logo:hover > img {
+        opacity: 0.4;
+      }
+
       /* --------- 헤더 끝 --------- */
     </style>
 
@@ -636,14 +678,12 @@
 
         if (dropdownContent.hasClass("is_active")) {
           dropdownContent.removeClass("is_active");
-          $this.removeClass('rotate');
+          $this.removeClass("rotate");
         } else {
           dropdownContent.addClass("is_active");
-          $this.addClass('rotate');
+          $this.addClass("rotate");
         }
       });
-
-      
     </script>
   </body>
 </html>
