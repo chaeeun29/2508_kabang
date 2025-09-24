@@ -73,6 +73,12 @@
 
     <section class="md_sec md_sec_3 con">
       <div>
+        <div class="img-box">
+          <img src="../imgs/main-moim.png" alt="" />
+        </div>
+      </div>
+
+      <div>
         <div class="txt_box">
           <h3>함께 쓰고 같이 보는<br />모임통장</h3>
           <p>
@@ -86,9 +92,6 @@
             <a href="#">모임통장 <img src="../imgs/home_arr.png" alt="" /></a>
           </div>
         </div>
-      </div>
-      <div class="img-box">
-        <img src="../imgs/main-moim.png" alt="" />
       </div>
     </section>
     <div class="md_divider"></div>
@@ -247,7 +250,7 @@
 
       /* ------------ 중간섹션 시작 ------------*/
       .md_sec {
-        min-height: 500px;
+        min-height: 750px;
         display: flex;
       }
 
@@ -309,12 +312,28 @@
       /* 공통섹션 끝 */
 
       /* 섹션 1 시작 */
+      .md_sec_1 > div:first-child > * {
+        margin-left: 40px;
+      }
+
+      .md_sec_1 > div:last-child > * {
+        margin-left: -20px;
+      }
+
       .md_sec_1 .img-box {
         width: 473px;
       }
       /* 섹션 1 끝끝 */
 
       /* 섹션 2 시작 */
+      .md_sec_2 > div:first-child > * {
+        margin-left: 70px;
+      }
+
+      .md_sec_2 > div:last-child > * {
+        margin-left: 12px;
+      }
+
       .md_sec_2 .img-box {
         width: 400px;
       }
@@ -326,7 +345,8 @@
 
       .md_sec_2 .txt_box > .img-box-1 {
         width: 440px;
-        margin-top: 10px;
+        margin-top: 65px;
+        margin-left: -10px;
       }
 
       .md_sec_2 .txt_box > .img-box-1 > img {
@@ -336,18 +356,46 @@
       /* 섹션 2 끝끝 */
 
       /* 섹션 3 시작 */
+      .md_sec_3 > div:first-child > * {
+        margin-left: 55px;
+      }
+
+      .md_sec_3 > div:last-child > * {
+        margin-left: -20px;
+      }
+
       .md_sec_3 .img-box {
         width: 459px;
       }
       /* 섹션 3 끝끝 */
 
       /* 섹션 4 시작 */
+      .md_sec_4 > div:first-child > * {
+        margin-left: 125px;
+      }
+
+      .md_sec_4 > div:last-child > * {
+        margin-left: -35px;
+      }
+
+      .md_sec_4 {
+        min-height: 650px;
+      }
+
       .md_sec_4 .img-box {
         width: 492px;
       }
       /* 섹션 4 끝끝 */
 
       /* 섹션 5 시작 */
+      .md_sec_5 > div:first-child > * {
+        margin-left: 75px;
+      }
+
+      .md_sec_5 > div:last-child > * {
+        margin-left: -20px;
+      }
+
       .md_sec_5_wrap {
         height: 750px;
         background: #fff url(/imgs/home_map.png) no-repeat -12% 50%;
